@@ -1,0 +1,23 @@
+# ninja log v5
+3	95	7304310303686950	curl-populate-prefix/src/curl-populate-stamp/curl-populate-mkdir	930c58fe97ba30a8
+15371	15545	7304310457731685	curl-populate-prefix/src/curl-populate-stamp/curl-populate-update	13b5d3d79b753154
+15545	15720	7304310459911940	C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch	78d5e0237f283352
+3	95	7304310303686950	C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-mkdir	930c58fe97ba30a8
+96	15326	7304310455979967	curl-populate-prefix/src/curl-populate-stamp/curl-populate-download	8261613853d89e75
+15979	16091	7304310463626490	C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-install	5e1f1f3e7489a0fc
+96	15326	7304310455979967	curl-populate-prefix/src/curl-8.4.0.tar.xz	8261613853d89e75
+96	15326	7304310455979967	C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-download	8261613853d89e75
+15371	15545	7304310457731685	C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-update	13b5d3d79b753154
+96	15326	7304310455979967	C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-8.4.0.tar.xz	8261613853d89e75
+15979	16091	7304310463626490	curl-populate-prefix/src/curl-populate-stamp/curl-populate-install	5e1f1f3e7489a0fc
+15545	15720	7304310459911940	curl-populate-prefix/src/curl-populate-stamp/curl-populate-patch	78d5e0237f283352
+16092	16218	7304310464893562	curl-populate-prefix/src/curl-populate-stamp/curl-populate-test	437646ff4c7cc68
+15721	15850	7304310461202001	curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure	df9881bc5a4a1bbd
+15721	15850	7304310461202001	C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-configure	df9881bc5a4a1bbd
+15851	15979	7304310462457273	curl-populate-prefix/src/curl-populate-stamp/curl-populate-build	dc3a567d4c151de6
+15851	15979	7304310462457273	C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-build	dc3a567d4c151de6
+16092	16218	7304310464893562	C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-test	437646ff4c7cc68
+16218	16387	7304310466577341	CMakeFiles/curl-populate-complete	10bd059c468d6b89
+16218	16387	7304310466577341	curl-populate-prefix/src/curl-populate-stamp/curl-populate-done	10bd059c468d6b89
+16218	16387	7304310466577341	C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-subbuild/CMakeFiles/curl-populate-complete	10bd059c468d6b89
+16218	16387	7304310466577341	C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-subbuild/curl-populate-prefix/src/curl-populate-stamp/curl-populate-done	10bd059c468d6b89
