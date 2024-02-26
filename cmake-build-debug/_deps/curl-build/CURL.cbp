@@ -1,0 +1,2558 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<CodeBlocks_project_file>
+	<FileVersion major="1" minor="6"/>
+	<Project>
+		<Option title="CURL"/>
+		<Option makefile_is_custom="1"/>
+		<Option compiler="gcc"/>
+		<Option virtualFolders="CMake Files\;CMake Files\cmake-build-debug\;CMake Files\cmake-build-debug\_deps\;CMake Files\cmake-build-debug\_deps\curl-src\;CMake Files\cmake-build-debug\_deps\curl-src\CMake\;CMake Files\cmake-build-debug\_deps\curl-src\CMake\Platforms\;CMake Files\cmake-build-debug\_deps\curl-src\lib\;CMake Files\cmake-build-debug\_deps\curl-build\;CMake Files\cmake-build-debug\_deps\curl-build\lib\;CMake Files\cmake-build-debug\_deps\cpr-src\;CMake Files\cmake-build-debug\_deps\cpr-src\cmake\;CMake Files\cmake-build-debug\_deps\cpr-src\cpr\;CMake Files\cmake-build-debug\_deps\cpr-src\include\;CMake Files\cmake-build-debug\_deps\zlib-src\;CMake Files\cmake-build-debug\_deps\zlib-src\cmake\;CMake Files\cmake-build-debug\_deps\zlib-build\;CMake Files\cmake-build-debug\_deps\json-src\;CMake Files\cmake-build-debug\_deps\json-src\cmake\;CMake Files\..\;CMake Files\..\..\;CMake Files\..\..\..\;CMake Files\..\..\..\..\;CMake Files\..\..\..\..\..\;CMake Files\..\..\..\..\..\Qt\;CMake Files\..\..\..\..\..\Qt\6.6.2\;CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\;CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\;CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\;CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\;CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Core\;CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6CoreTools\;CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6ZlibPrivate\;CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6EntryPointPrivate\;CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\;CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6GuiTools\;CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Widgets\;CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6WidgetsTools\;"/>
+		<Build>
+			<Target title="all">
+				<Option working_dir="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/Makefile&quot;  VERBOSE=1 all"/>
+					<CompileFile command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="curl_uninstall">
+				<Option working_dir="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build"/>
+				<Option type="4"/>
+				<MakeCommands>
+					<Build command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/Makefile&quot;  VERBOSE=1 curl_uninstall"/>
+					<CompileFile command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="curlu">
+				<Option output="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/libcurlu-d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUNITTESTS"/>
+					<Add option="-DCURL_STATICLIB"/>
+					<Add option="-DCPR_ENABLE_CURL_HTTP_ONLY"/>
+					<Add option="-DCPR_ENABLE_SSL"/>
+					<Add option="-DHAVE_CONFIG_H"/>
+					<Add option="-DBUILDING_LIBCURL"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/include"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/../include"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/.."/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/../include"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/.."/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/mingw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 curlu"/>
+					<CompileFile command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="curlu/fast">
+				<Option output="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/libcurlu-d.a" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DUNITTESTS"/>
+					<Add option="-DCURL_STATICLIB"/>
+					<Add option="-DCPR_ENABLE_CURL_HTTP_ONLY"/>
+					<Add option="-DCPR_ENABLE_SSL"/>
+					<Add option="-DHAVE_CONFIG_H"/>
+					<Add option="-DBUILDING_LIBCURL"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/include"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/../include"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/.."/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/../include"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/.."/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/mingw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 curlu/fast"/>
+					<CompileFile command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libcurl_object">
+				<Option output="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/libcurl_object.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCURL_HIDDEN_SYMBOLS"/>
+					<Add option="-DCPR_ENABLE_CURL_HTTP_ONLY"/>
+					<Add option="-DCPR_ENABLE_SSL"/>
+					<Add option="-DHAVE_CONFIG_H"/>
+					<Add option="-DBUILDING_LIBCURL"/>
+					<Add option="-DCURL_STATICLIB"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/include"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/../include"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/.."/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/../include"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/.."/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/mingw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 libcurl_object"/>
+					<CompileFile command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libcurl_object/fast">
+				<Option output="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/libcurl_object.objlib" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib"/>
+				<Option object_output="./"/>
+				<Option type="2"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCURL_HIDDEN_SYMBOLS"/>
+					<Add option="-DCPR_ENABLE_CURL_HTTP_ONLY"/>
+					<Add option="-DCPR_ENABLE_SSL"/>
+					<Add option="-DHAVE_CONFIG_H"/>
+					<Add option="-DBUILDING_LIBCURL"/>
+					<Add option="-DCURL_STATICLIB"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/include"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/../include"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/.."/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/../include"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/.."/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/mingw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 libcurl_object/fast"/>
+					<CompileFile command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libcurl_shared">
+				<Option output="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/libcurl-d.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCURL_HIDDEN_SYMBOLS"/>
+					<Add option="-DCPR_ENABLE_CURL_HTTP_ONLY"/>
+					<Add option="-DCPR_ENABLE_SSL"/>
+					<Add option="-DHAVE_CONFIG_H"/>
+					<Add option="-DBUILDING_LIBCURL"/>
+					<Add option="-DCURL_STATICLIB"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/include"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/../include"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/.."/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/../include"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/.."/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/mingw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 libcurl_shared"/>
+					<CompileFile command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+			<Target title="libcurl_shared/fast">
+				<Option output="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/libcurl-d.dll" prefix_auto="0" extension_auto="0"/>
+				<Option working_dir="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib"/>
+				<Option object_output="./"/>
+				<Option type="3"/>
+				<Option compiler="gcc"/>
+				<Compiler>
+					<Add option="-DCURL_HIDDEN_SYMBOLS"/>
+					<Add option="-DCPR_ENABLE_CURL_HTTP_ONLY"/>
+					<Add option="-DCPR_ENABLE_SSL"/>
+					<Add option="-DHAVE_CONFIG_H"/>
+					<Add option="-DBUILDING_LIBCURL"/>
+					<Add option="-DCURL_STATICLIB"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/include"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/../include"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/.."/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/../include"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/.."/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib"/>
+					<Add directory="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/x86_64-w64-mingw32"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include/c++/backward"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../include"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/include-fixed"/>
+					<Add directory="C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/mingw/bin/../lib/gcc/x86_64-w64-mingw32/13.1.0/../../../../x86_64-w64-mingw32/include"/>
+					<Add directory="/mingw/include"/>
+				</Compiler>
+				<MakeCommands>
+					<Build command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 libcurl_shared/fast"/>
+					<CompileFile command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 &quot;$file&quot;"/>
+					<Clean command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 clean"/>
+					<DistClean command="C:/Users/antikill/AppData/Local/Programs/CLIONN~1/bin/mingw/bin/mingw32-make.exe -f &quot;C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile&quot;  VERBOSE=1 clean"/>
+				</MakeCommands>
+			</Target>
+		</Build>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/altsvc.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/amigaos.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/asyn-ares.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/asyn-thread.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/base64.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/bufq.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/bufref.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/c-hyper.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/cf-h1-proxy.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/cf-h2-proxy.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/cf-haproxy.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/cf-https-connect.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/cf-socket.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/cfilters.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/conncache.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/connect.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/content_encoding.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/cookie.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/curl_addrinfo.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/curl_des.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/curl_endian.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/curl_fnmatch.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/curl_get_line.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/curl_gethostname.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/curl_gssapi.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/curl_memrchr.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/curl_multibyte.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/curl_ntlm_core.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/curl_ntlm_wb.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/curl_path.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/curl_range.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/curl_rtmp.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/curl_sasl.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/curl_sspi.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/curl_threads.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/curl_trc.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/dict.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/doh.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/dynbuf.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/dynhds.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/easy.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/easygetopt.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/easyoptions.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/escape.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/file.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/fileinfo.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/fopen.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/formdata.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/ftp.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/ftplistparser.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/getenv.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/getinfo.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/gopher.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/hash.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/headers.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/hmac.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/hostasyn.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/hostip.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/hostip4.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/hostip6.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/hostsyn.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/hsts.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/http.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/http1.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/http2.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/http_aws_sigv4.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/http_chunks.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/http_digest.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/http_negotiate.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/http_ntlm.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/http_proxy.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/idn.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/if2ip.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/imap.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/inet_ntop.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/inet_pton.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/krb5.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/ldap.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/llist.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/macos.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/md4.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/md5.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/memdebug.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/mime.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/mprintf.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/mqtt.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/multi.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/netrc.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/nonblock.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/noproxy.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/openldap.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/parsedate.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/pingpong.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/pop3.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/progress.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/psl.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/rand.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/rename.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/rtsp.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/select.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/sendf.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/setopt.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/sha256.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/share.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/slist.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/smb.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/smtp.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/socketpair.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/socks.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/socks_gssapi.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/socks_sspi.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/speedcheck.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/splay.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/strcase.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/strdup.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/strerror.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/strtok.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/strtoofft.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/system_win32.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/telnet.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/tftp.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/timediff.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/timeval.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/transfer.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/url.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/urlapi.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vauth/cleartext.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vauth/cram.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vauth/digest.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vauth/digest_sspi.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vauth/gsasl.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vauth/krb5_gssapi.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vauth/krb5_sspi.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vauth/ntlm.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vauth/ntlm_sspi.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vauth/oauth2.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vauth/spnego_gssapi.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vauth/spnego_sspi.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vauth/vauth.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/version.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/version_win32.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vquic/curl_msh3.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vquic/curl_ngtcp2.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vquic/curl_quiche.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vquic/vquic.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vssh/libssh.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vssh/libssh2.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vssh/wolfssh.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vtls/bearssl.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vtls/gtls.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vtls/hostcheck.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vtls/keylog.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vtls/mbedtls.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vtls/mbedtls_threadlock.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vtls/openssl.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vtls/rustls.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vtls/schannel.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vtls/schannel_verify.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vtls/sectransp.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vtls/vtls.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vtls/wolfssl.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/vtls/x509asn1.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/warnless.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/CMakeFiles/libcurl_object.dir/ws.c.obj">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/curl_config.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/altsvc.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/altsvc.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/amigaos.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/amigaos.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/arpa_telnet.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/asyn-ares.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/asyn-thread.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/asyn.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/base64.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/bufq.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/bufq.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/bufref.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/bufref.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/c-hyper.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/c-hyper.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/cf-h1-proxy.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/cf-h1-proxy.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/cf-h2-proxy.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/cf-h2-proxy.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/cf-haproxy.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/cf-haproxy.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/cf-https-connect.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/cf-https-connect.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/cf-socket.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/cf-socket.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/cfilters.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/cfilters.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/conncache.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/conncache.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/connect.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/connect.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/content_encoding.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/content_encoding.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/cookie.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/cookie.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_addrinfo.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_addrinfo.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_base64.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_ctype.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_des.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_des.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_endian.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_endian.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_fnmatch.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_fnmatch.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_get_line.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_get_line.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_gethostname.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_gethostname.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_gssapi.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_gssapi.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_hmac.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_krb5.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_ldap.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_md4.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_md5.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_memory.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_memrchr.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_memrchr.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_multibyte.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_multibyte.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_ntlm_core.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_ntlm_core.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_ntlm_wb.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_ntlm_wb.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_path.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_path.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_printf.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_range.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_range.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_rtmp.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_rtmp.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_sasl.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_sasl.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_setup.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_setup_once.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_sha256.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_sspi.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_sspi.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_threads.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_threads.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_trc.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_trc.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curlx.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/dict.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/dict.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/doh.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/doh.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/dynbuf.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/dynbuf.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/dynhds.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/dynhds.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/easy.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/easy_lock.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/easygetopt.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/easyif.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/easyoptions.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/easyoptions.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/escape.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/escape.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/file.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/file.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/fileinfo.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/fileinfo.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/fopen.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/fopen.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/formdata.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/formdata.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/ftp.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/ftp.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/ftplistparser.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/ftplistparser.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/functypes.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/getenv.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/getinfo.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/getinfo.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/gopher.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/gopher.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/hash.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/hash.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/headers.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/headers.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/hmac.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/hostasyn.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/hostip.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/hostip.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/hostip4.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/hostip6.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/hostsyn.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/hsts.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/hsts.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/http.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/http.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/http1.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/http1.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/http2.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/http2.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/http_aws_sigv4.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/http_aws_sigv4.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/http_chunks.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/http_chunks.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/http_digest.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/http_digest.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/http_negotiate.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/http_negotiate.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/http_ntlm.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/http_ntlm.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/http_proxy.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/http_proxy.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/idn.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/idn.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/if2ip.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/if2ip.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/imap.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/imap.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/inet_ntop.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/inet_ntop.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/inet_pton.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/inet_pton.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/krb5.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/ldap.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/libcurl.rc">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/llist.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/llist.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/macos.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/macos.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/md4.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/md5.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/memdebug.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/memdebug.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/mime.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/mime.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/mprintf.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/mqtt.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/mqtt.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/multi.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/multihandle.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/multiif.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/netrc.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/netrc.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/nonblock.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/nonblock.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/noproxy.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/noproxy.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/openldap.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/parsedate.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/parsedate.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/pingpong.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/pingpong.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/pop3.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/pop3.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/progress.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/progress.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/psl.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/psl.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/rand.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/rand.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/rename.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/rename.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/rtsp.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/rtsp.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/select.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/select.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/sendf.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/sendf.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/setopt.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/setopt.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/setup-vms.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/sha256.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/share.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/share.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/sigpipe.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/slist.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/slist.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/smb.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/smb.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/smtp.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/smtp.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/sockaddr.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/socketpair.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/socketpair.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/socks.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/socks.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/socks_gssapi.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/socks_sspi.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/speedcheck.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/speedcheck.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/splay.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/splay.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/strcase.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/strcase.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/strdup.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/strdup.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/strerror.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/strerror.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/strtok.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/strtok.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/strtoofft.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/strtoofft.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/system_win32.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/system_win32.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/telnet.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/telnet.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/tftp.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/tftp.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/timediff.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/timediff.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/timeval.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/timeval.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/transfer.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/transfer.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/url.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/url.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/urlapi-int.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/urlapi.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/urldata.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vauth/cleartext.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vauth/cram.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vauth/digest.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vauth/digest.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vauth/digest_sspi.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vauth/gsasl.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vauth/krb5_gssapi.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vauth/krb5_sspi.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vauth/ntlm.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vauth/ntlm.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vauth/ntlm_sspi.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vauth/oauth2.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vauth/spnego_gssapi.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vauth/spnego_sspi.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vauth/vauth.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vauth/vauth.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/version.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/version_win32.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/version_win32.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vquic/curl_msh3.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vquic/curl_msh3.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vquic/curl_ngtcp2.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vquic/curl_ngtcp2.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vquic/curl_quiche.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vquic/curl_quiche.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vquic/vquic.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vquic/vquic.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vquic/vquic_int.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vssh/libssh.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vssh/libssh2.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vssh/ssh.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vssh/wolfssh.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/bearssl.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/bearssl.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/gtls.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/gtls.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/hostcheck.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/hostcheck.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/keylog.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/keylog.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/mbedtls.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/mbedtls.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/mbedtls_threadlock.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/mbedtls_threadlock.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/openssl.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/openssl.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/rustls.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/rustls.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/schannel.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/schannel.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/schannel_int.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/schannel_verify.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/sectransp.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/sectransp.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/vtls.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/vtls.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/vtls_int.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/wolfssl.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/wolfssl.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/x509asn1.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/vtls/x509asn1.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/warnless.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/warnless.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/ws.c">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/ws.h">
+			<Option target="curlu"/>
+			<Option target="libcurl_object"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/libcurl.def">
+			<Option target="libcurl_shared"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-src\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/curl-config.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-src\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/libcurl.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-src\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/CMake/CurlSymbolHiding.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-src\CMake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/CMake/CurlTests.c">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-src\CMake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/CMake/FindLibPSL.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-src\CMake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/CMake/FindLibSSH2.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-src\CMake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/CMake/Macros.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-src\CMake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/CMake/OtherTests.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-src\CMake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/CMake/PickyWarnings.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-src\CMake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/CMake/Utilities.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-src\CMake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/CMake/cmake_uninstall.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-src\CMake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/CMake/curl-config.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-src\CMake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/CMake/Platforms/WindowsCache.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-src\CMake\Platforms\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-src\lib\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/Makefile.inc">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-src\lib\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/Makefile.soname">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-src\lib\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-src/lib/curl_config.h.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-src\lib\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile.inc.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-build\lib\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/curl-build/lib/Makefile.soname.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\curl-build\lib\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/cpr-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\cpr-src\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/cpr-src/cmake/clear_variable.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\cpr-src\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/cpr-src/cmake/code_coverage.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\cpr-src\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/cpr-src/cmake/cprver.h.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\cpr-src\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/cpr-src/cmake/sanitizer.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\cpr-src\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/cpr-src/cmake/zlib_external.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\cpr-src\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/cpr-src/cpr/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\cpr-src\cpr\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/cpr-src/include/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\cpr-src\include\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/zlib-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\zlib-src\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/zlib-src/zlib.pc.cmakein">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\zlib-src\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/zlib-src/cmake/detect-arch.c">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\zlib-src\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/zlib-src/cmake/detect-arch.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\zlib-src\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/zlib-src/cmake/detect-coverage.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\zlib-src\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/zlib-src/cmake/detect-install-dirs.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\zlib-src\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/zlib-src/cmake/detect-sanitizer.cmake">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\zlib-src\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/zlib-build/zconf.h.cmakein">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\zlib-build\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/json-src/CMakeLists.txt">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\json-src\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/json-src/cmake/config.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\json-src\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/json-src/cmake/nlohmann_jsonConfigVersion.cmake.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\json-src\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/json-src/cmake/pkg-config.pc.in">
+			<Option virtualFolder="CMake Files\cmake-build-debug\_deps\json-src\cmake\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/FindWrapAtomic.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/FindWrapVulkanHeaders.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/Qt6Config.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/Qt6ConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/Qt6ConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/Qt6ConfigVersionImpl.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/Qt6Dependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/Qt6Targets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/Qt6VersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/QtFeature.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/QtFeatureCommon.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/QtPublicAppleHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/QtPublicCMakeHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/QtPublicCMakeVersionHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/QtPublicDependencyHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/QtPublicExternalProjectHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/QtPublicFinalizerHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/QtPublicFindPackageHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/QtPublicPluginHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/QtPublicTargetHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/QtPublicTestHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/QtPublicToolHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6/QtPublicWalkLibsHelpers.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigExtras.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreConfigVersionImpl.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Core/Qt6CoreVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Core/QtInstallPaths.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Core\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsConfigVersionImpl.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6CoreTools/Qt6CoreToolsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6CoreTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6ZlibPrivate\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6ZlibPrivate\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6ZlibPrivate\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateConfigVersionImpl.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6ZlibPrivate\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6ZlibPrivate\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6ZlibPrivate/Qt6ZlibPrivateVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6ZlibPrivate\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointMinGW32Target.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6EntryPointPrivate\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6EntryPointPrivate\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6EntryPointPrivate\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6EntryPointPrivate\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateConfigVersionImpl.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6EntryPointPrivate\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6EntryPointPrivate\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6EntryPointPrivate\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6EntryPointPrivate/Qt6EntryPointPrivateVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6EntryPointPrivate\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6GuiAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6GuiConfigVersionImpl.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6GuiDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6GuiPlugins.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6GuiTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6GuiVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QGifPluginTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QICOPluginTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QJpegPluginTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QMinimalIntegrationPluginTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QOffscreenIntegrationPluginTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgIconPluginTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QSvgPluginTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QTuioTouchPluginTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsDirect2DIntegrationPluginTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Gui/Qt6QWindowsIntegrationPluginTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Gui\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsConfigVersionImpl.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6GuiTools/Qt6GuiToolsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6GuiTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Widgets/Qt6QWindowsVistaStylePluginTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsConfigVersionImpl.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsMacros.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsPlugins.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6Widgets/Qt6WidgetsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6Widgets\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsAdditionalTargetInfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfig.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersion.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsConfigVersionImpl.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsDependencies.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets-relwithdebinfo.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+		<Unit filename="C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/../../../../../Qt/6.6.2/mingw_64/lib/cmake/Qt6WidgetsTools/Qt6WidgetsToolsVersionlessTargets.cmake">
+			<Option virtualFolder="CMake Files\..\..\..\..\..\Qt\6.6.2\mingw_64\lib\cmake\Qt6WidgetsTools\"/>
+		</Unit>
+	</Project>
+</CodeBlocks_project_file>

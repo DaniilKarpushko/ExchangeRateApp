@@ -2,17 +2,16 @@
 #include <cpr/cpr.h>
 #include<iostream>
 
-void RequestController::Get()
+ExchangeData RequestController::GetExchangeData()
 {
     cpr::Url request = "https://openexchangerates.org/api/latest.json?app_id=" + api_id_;
     const cpr::Response response = cpr::Get(request);
-    if(response.status_code == 200)
+    long status_code = response.status_code;
+
+    if (response.status_code == 200)
     {
-        const auto res = exchange_data_parser_.ParsenJsonData(response.text);
-        std::cout << res.Base << '\n';
-        for(const auto& el : res.Exchange)
-        {
-            std::cout << el.first << " " << el.second << '\n';
-        }
+        return exchange_data_parser_.ParsenJsonData(response.text);
     }
+
+    return ExchangeData("", std::map<std::string, float>(), status_code);
 }

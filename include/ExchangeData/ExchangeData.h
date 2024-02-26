@@ -4,7 +4,7 @@
 
 struct ExchangeData
 {
-    std::string Base;
-    std::map<std::string, float> Exchange;
-
+    std::string base;
+    std::map<std::string, float> exchange;
+    long status_code;
 };

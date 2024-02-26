@@ -1,0 +1,3 @@
+"C:\Users\antikill\AppData\Local\Programs\CLion Nova\bin\cmake\win\x64\bin\cmake.exe" -E rm -f CMakeFiles\ExchangeRateApp.dir/objects.a
+C:\Users\antikill\AppData\Local\Programs\CLIONN~1\bin\mingw\bin\ar.exe qc CMakeFiles\ExchangeRateApp.dir/objects.a @CMakeFiles\ExchangeRateApp.dir\objects1.rsp
+C:\Users\antikill\AppData\Local\Programs\CLIONN~1\bin\mingw\bin\G__~1.EXE -g -Wl,--whole-archive CMakeFiles\ExchangeRateApp.dir/objects.a -Wl,--no-whole-archive -o ExchangeRateApp.exe -Wl,--out-implib,libExchangeRateApp.dll.a -Wl,--major-image-version,0,--minor-image-version,0 @CMakeFiles\ExchangeRateApp.dir\linkLibs.rsp

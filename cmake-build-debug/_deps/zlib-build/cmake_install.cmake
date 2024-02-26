@@ -92,6 +92,14 @@ if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT
 endif()
 
 if(CMAKE_INSTALL_COMPONENT STREQUAL "Unspecified" OR NOT CMAKE_INSTALL_COMPONENT)
-  file(INSTALL DESTINATION "${CMAKE_INSTALL_PREFIX}/lib/pkgconfig" TYPE FILE FILES "C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/zlib-build/zlib.pc")
+  list(APPEND CMAKE_ABSOLUTE_DESTINATION_FILES
+   "C:/Program Files (x86)/ExchangeRateApp/lib/pkgconfig/zlib.pc")
+  if(CMAKE_WARN_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(WARNING "ABSOLUTE path INSTALL DESTINATION : ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  if(CMAKE_ERROR_ON_ABSOLUTE_INSTALL_DESTINATION)
+    message(FATAL_ERROR "ABSOLUTE path INSTALL DESTINATION forbidden (by caller): ${CMAKE_ABSOLUTE_DESTINATION_FILES}")
+  endif()
+  file(INSTALL DESTINATION "C:/Program Files (x86)/ExchangeRateApp/lib/pkgconfig" TYPE FILE FILES "C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/_deps/zlib-build/zlib.pc")
 endif()
 

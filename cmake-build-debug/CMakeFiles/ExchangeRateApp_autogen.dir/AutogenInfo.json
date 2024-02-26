@@ -17,6 +17,9 @@
 		"C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeInitializeConfigs.cmake",
 		"C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/Windows.cmake",
 		"C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Platform/WindowsPaths.cmake",
+		"C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeFindCodeBlocks.cmake",
+		"C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeExtraGeneratorDetermineCompilerMacrosAndIncludeDirs.cmake",
+		"C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/ProcessorCount.cmake",
 		"C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeCInformation.cmake",
 		"C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/CMakeLanguageInformation.cmake",
 		"C:/Users/antikill/AppData/Local/Programs/CLion Nova/bin/cmake/win/x64/share/cmake-3.28/Modules/Compiler/GNU-C.cmake",
@@ -228,6 +231,12 @@
 	"HEADERS" : 
 	[
 		[
+			"C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/cmake-build-debug/ExchangeRateApp_autogen/include/View/Widget/ui_exchangewidget.h",
+			"MU",
+			"BUAXA4OZ54/moc_ui_exchangewidget.cpp",
+			null
+		],
+		[
 			"C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/include/Controller/RequestController.h",
 			"MU",
 			"FQY5RS3POL/moc_RequestController.cpp",
@@ -243,6 +252,18 @@
 			"C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/include/ExchangeDataParser/ExchangeDataParser.h",
 			"MU",
 			"N5DPEPDBFM/moc_ExchangeDataParser.cpp",
+			null
+		],
+		[
+			"C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/include/ExchangeDataParser/ExchangeDataTranslator.h",
+			"MU",
+			"N5DPEPDBFM/moc_ExchangeDataTranslator.cpp",
+			null
+		],
+		[
+			"C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/include/Presentation/Widget/ExchangeWidget.h",
+			"MU",
+			"RI4VZWPFC5/moc_ExchangeWidget.cpp",
 			null
 		]
 	],
@@ -331,6 +352,11 @@
 		],
 		[
 			"C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/src/ExchangeDataParser/ExchangeDataParser.cpp",
+			"MU",
+			null
+		],
+		[
+			"C:/Users/antikill/Desktop/GitHub/ExchangeRateApp/src/View/Presentation/ExchangeWidget.cpp",
 			"MU",
 			null
 		],

@@ -14,5 +14,5 @@ public:
     {
     }
 
-    void Get();
+    ExchangeData GetExchangeData();
 };

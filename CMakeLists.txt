@@ -35,11 +35,18 @@ find_package(Qt6 COMPONENTS
 include_directories(include)
 set(SOURCES src/main.cpp
         src/ExchangeDataParser/ExchangeDataParser.cpp
-        src/Controller/RequestController.cpp)
+        src/Controller/RequestController.cpp
+        src/View/Presentation/ExchangeWidget.cpp
+        src/View/Presentation/exchangewidget.ui
+        )
 set(HEADERS
         include/Controller/RequestController.h
         include/ExchangeData/ExchangeData.h
-        include/ExchangeDataParser/ExchangeDataParser.h)
+        include/ExchangeDataParser/ExchangeDataParser.h
+        include/Presentation/Widget/ExchangeWidget.h
+        cmake-build-debug/ExchangeRateApp_autogen/include/View/Widget/ui_exchangewidget.h
+        include/ExchangeDataParser/ExchangeDataTranslator.h
+)
 add_executable(ExchangeRateApp ${SOURCES} ${HEADERS})
 target_link_libraries(ExchangeRateApp
         Qt::Core
