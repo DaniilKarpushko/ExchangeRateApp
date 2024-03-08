@@ -1,11 +1,13 @@
 #pragma once
 #include <string>
 
+#include "ExchangeCounter.h"
 #include "ExchangeDataParser/ExchangeDataParser.h"
 
 class RequestController
 {
     std::string api_id_;
+    ExchangeData current_data_;
     ExchangeDataParser exchange_data_parser_;
 
 public:
@@ -14,5 +16,6 @@ public:
     {
     }
 
-    ExchangeData GetExchangeData();
+    ExchangeData getExchangeData();
+    float valueConvertion(const std::string& val_to, const std::string& val_from, float amount);
 };

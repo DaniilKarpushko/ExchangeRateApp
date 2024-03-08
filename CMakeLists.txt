@@ -36,16 +36,25 @@ include_directories(include)
 set(SOURCES src/main.cpp
         src/ExchangeDataParser/ExchangeDataParser.cpp
         src/Controller/RequestController.cpp
-        src/View/Presentation/ExchangeWidget.cpp
+        src/View/Presentation/ChooseExTypeWidget.cpp
         src/View/Presentation/exchangewidget.ui
-        )
+        src/View/Presentation/InsertExAmounWidget.cpp
+        src/View/Presentation/InputWidget.cpp
+        src/View/Presentation/NumericExTextWidget.cpp
+)
 set(HEADERS
         include/Controller/RequestController.h
         include/ExchangeData/ExchangeData.h
         include/ExchangeDataParser/ExchangeDataParser.h
-        include/Presentation/Widget/ExchangeWidget.h
+        include/Presentation/Widget/ChooseExTypeWidget.h
         cmake-build-debug/ExchangeRateApp_autogen/include/View/Widget/ui_exchangewidget.h
         include/ExchangeDataParser/ExchangeDataTranslator.h
+        include/Presentation/Widget/ListWidget.h
+        include/Controller/ExchangeCounter.h
+        include/Presentation/Widget/ExchangeMainWindow.h
+        include/Presentation/Widget/InsertExAmountWidget.h
+        include/Presentation/Widget/InputWidget.h
+        include/Presentation/Widget/NumericExTextWidget.h
 )
 add_executable(ExchangeRateApp ${SOURCES} ${HEADERS})
 target_link_libraries(ExchangeRateApp

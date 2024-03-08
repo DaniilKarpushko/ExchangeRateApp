@@ -6,10 +6,7 @@
 #ifndef EXCHANGEWIDGET_H
 #define EXCHANGEWIDGET_H
 
-#include <QWidget>
-#include <QPushButton>
 #include <QTextEdit>
-#include <QVBoxLayout>
 #include "Controller/RequestController.h"
 
 
@@ -19,23 +16,20 @@ namespace Ui
 }
 
 
-class ExchangeWidget : public QWidget
+class ChooseExTypeWidget : public QWidget
 {
     Q_OBJECT
 
 private:
-    int _lenght;
-    int _width;
-    RequestController* request_controller_;
-    QTextEdit* text_edit_;
+    QStringList list_;
 
 public:
-    explicit ExchangeWidget(RequestController* request_controller, QWidget* parent = nullptr);
+    explicit ChooseExTypeWidget(QWidget* parent = nullptr);
 
-    ~ExchangeWidget() override;
+    ~ChooseExTypeWidget() override;
 
-public slots:
-    void GetExchangeData();
+// public slots:
+//     void GetExchangeData();
 
 private:
     Ui::ExchangeWidget* ui{};

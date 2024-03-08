@@ -22,7 +22,7 @@ public:
     void setupUi(QWidget *ExchangeWidget)
     {
         if (ExchangeWidget->objectName().isEmpty())
-            ExchangeWidget->setObjectName("ExchangeWidget");
+            ExchangeWidget->setObjectName("ChooseExTypeWidget");
         ExchangeWidget->resize(400, 300);
 
         retranslateUi(ExchangeWidget);
@@ -32,7 +32,7 @@ public:
 
     void retranslateUi(QWidget *ExchangeWidget)
     {
-        ExchangeWidget->setWindowTitle(QCoreApplication::translate("ExchangeWidget", "ExchangeWidget", nullptr));
+        ExchangeWidget->setWindowTitle(QCoreApplication::translate("ChooseExTypeWidget", "ChooseExTypeWidget", nullptr));
     } // retranslateUi
 
 };
