@@ -22,17 +22,17 @@ ExchangeWidget::ExchangeWidget(RequestController* request_controller, QWidget* p
 
     auto *button = new QPushButton("Нажми меня", this);
     text_edit_ = new QTextEdit(this);
-    text_edit_ ->setReadOnly(true); // Установка только для чтения
+    text_edit_ ->setReadOnly(true);
 
-    // Создание вертикального макета для удобного размещения элементов
+    
     auto *layout = new QVBoxLayout(this);
     layout->addWidget(button);
     layout->addWidget(text_edit_);
 
-    // Подключение сигнала нажатия кнопки к слоту для вывода текста
+    
     connect(button, &QPushButton::clicked, this, &ExchangeWidget::GetExchangeData);
 
-    // Установка макета для виджета
+
     setLayout(layout);
 }
 
