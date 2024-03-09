@@ -37,10 +37,10 @@ set(SOURCES src/main.cpp
         src/ExchangeDataParser/ExchangeDataParser.cpp
         src/Controller/RequestController.cpp
         src/View/Presentation/ChooseExTypeWidget.cpp
-        src/View/Presentation/exchangewidget.ui
         src/View/Presentation/InsertExAmounWidget.cpp
         src/View/Presentation/InputWidget.cpp
         src/View/Presentation/NumericExTextWidget.cpp
+        src/View/Presentation/OutputExAmountWIdget.cpp
 )
 set(HEADERS
         include/Controller/RequestController.h
@@ -55,6 +55,8 @@ set(HEADERS
         include/Presentation/Widget/InsertExAmountWidget.h
         include/Presentation/Widget/InputWidget.h
         include/Presentation/Widget/NumericExTextWidget.h
+        include/Presentation/Widget/OutputExAmountWidget.h
+        include/TimerForUpdates.h
 )
 add_executable(ExchangeRateApp ${SOURCES} ${HEADERS})
 target_link_libraries(ExchangeRateApp

@@ -7,11 +7,18 @@
 class InputWidget : public QWidget
 {
     Q_OBJECT
-private:
+
     RequestController* controller_;
-    // QString current_code_from_;
-    // QString current_code_to_;
+    std::string current_code_from_;
+    std::string current_code_to_;
 
 public:
     explicit InputWidget(RequestController* controller, QWidget* parent = nullptr);
+
+public slots:
+    void updateText(const QString& text);
+    void setCurrentCodeFrom(const QString& text);
+    void setCurrentCodeTo(const QString& text);
+signals:
+    void textChanged(const QString& text);
 };

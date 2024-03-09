@@ -5,8 +5,14 @@
 
 class InsertExAmountWidget : public QWidget
 {
+    Q_OBJECT
 public:
     explicit InsertExAmountWidget(QWidget* parent = nullptr);
-private slots:
-    void SendText();
+
+public slots:
+    void applyNewText(const QString& text);
+    void updText(const QString& text);
+
+signals:
+    void updateNewText(const QString& text);
 };

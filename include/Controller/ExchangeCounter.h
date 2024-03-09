@@ -1,6 +1,5 @@
 #pragma once
 #include <ExchangeData/ExchangeData.h>
-#include <ExchangeDataParser/ExchangeDataTranslator.h>
 class ExchangeCounter
 {
 public:

@@ -1,13 +1,9 @@
 #pragma once
 #include <QComboBox>
 
-namespace ui
-{
-    class ListWidget;
-}
-
 class ListWidget : public QComboBox
 {
+    Q_OBJECT
 public:
     explicit ListWidget(QWidget* parent = nullptr) : QComboBox(parent) {};
 };

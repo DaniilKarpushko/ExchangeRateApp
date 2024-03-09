@@ -6,6 +6,7 @@ NumericExTextWidget::NumericExTextWidget(QWidget* parent)
     :QTextEdit(parent)
 {
     setPlainText("Введите количество");
+    connect(this,&QTextEdit::textChanged,this,&NumericExTextWidget::textChanged);
 }
 
 void NumericExTextWidget::focusInEvent(QFocusEvent* event)
@@ -22,4 +23,9 @@ void NumericExTextWidget::keyPressEvent(QKeyEvent* event)
     {
         QTextEdit::keyPressEvent(event);
     }
+}
+
+void NumericExTextWidget::textChanged()
+{
+    emit textChangedUpd(toPlainText());
 }

@@ -9,32 +9,23 @@
 #include <QTextEdit>
 #include "Controller/RequestController.h"
 
-
-namespace Ui
-{
-    class ExchangeWidget;
-}
-
-
 class ChooseExTypeWidget : public QWidget
 {
     Q_OBJECT
 
 private:
-    QStringList list_;
+    QStringList* list_;
 
 public:
     explicit ChooseExTypeWidget(QWidget* parent = nullptr);
-
     ~ChooseExTypeWidget() override;
 
-// public slots:
-//     void GetExchangeData();
-
-private:
-    Ui::ExchangeWidget* ui{};
-
-    static QString ConfigureText(const ExchangeData& data);
+public slots:
+    void getExToData(const QString& text);
+    void getExFromData(const QString& text);
+signals:
+    void changedExTo(const QString& text);
+    void changedExFrom(const QString& text);
 };
 
 
