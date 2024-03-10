@@ -25,13 +25,11 @@ void RequestController::updateExchangeDate()
 {
     cpr::Url request = "https://openexchangerates.org/api/latest.json?app_id=" + api_id_;
     const cpr::Response response = cpr::GetAsync(request).get();
-    long status_code = response.status_code;
+    current_data_ = ExchangeData("", std::map<std::string, float>(), response.status_code);
 
     if (response.status_code == 200)
     {
         current_data_ = exchange_data_parser_.ParsenJsonData(response.text);
     }
-
-    current_data_ = ExchangeData("", std::map<std::string, float>(), status_code);
 }
 

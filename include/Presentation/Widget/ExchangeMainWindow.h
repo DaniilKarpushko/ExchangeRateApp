@@ -2,7 +2,7 @@
 #include <QMainWindow>
 
 
-
+//TODO:
 class ExchangeMainWindow : public QMainWindow
 {
     Q_OBJECT

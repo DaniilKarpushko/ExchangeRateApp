@@ -16,8 +16,8 @@ InputWidget::InputWidget(RequestController* controller, QWidget* parent)
     connect(insert_widget,&InsertExAmountWidget::updateNewText,this,&InputWidget::updateText);
     connect(choose_widget,&ChooseExTypeWidget::changedExFrom,this,&InputWidget::setCurrentCodeFrom);
     connect(choose_widget,&ChooseExTypeWidget::changedExTo,this,&InputWidget::setCurrentCodeTo);
-
     // connect(this,&InputWidget::textChanged,insert_widget,&InsertExAmountWidget::updateNewText);
+
     auto* layout = new QVBoxLayout();
 
     layout->addWidget(choose_widget);

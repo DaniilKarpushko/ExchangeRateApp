@@ -14,7 +14,7 @@ InsertExAmountWidget::InsertExAmountWidget(QWidget* parent)
     text_editor_to->setReadOnly(true);
 
     connect(text_editor_from,&NumericExTextWidget::textChangedUpd,this,&InsertExAmountWidget::applyNewText);
-    // connect(this,&InsertExAmountWidget::updateNewText,text_editor_to,&OutputExAmountWidget::updText);
+    connect(this,&InsertExAmountWidget::updateNewText,text_editor_to,&OutputExAmountWidget::updText);
 
     auto* layout = new QHBoxLayout();
     layout->addWidget(text_editor_from);
