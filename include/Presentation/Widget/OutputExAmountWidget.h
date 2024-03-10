@@ -7,7 +7,4 @@ class OutputExAmountWidget : public QTextEdit
 
 public:
     explicit OutputExAmountWidget(QWidget* parent = nullptr);
-
-public slots:
-    void updText(const QString& text);
 };

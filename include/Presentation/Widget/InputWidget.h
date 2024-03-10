@@ -16,9 +16,9 @@ public:
     explicit InputWidget(RequestController* controller, QWidget* parent = nullptr);
 
 public slots:
-    void updateText(const QString& text);
-    void setCurrentCodeFrom(const QString& text);
-    void setCurrentCodeTo(const QString& text);
+    void countNewValue(const QString& text);
+    void changedCurrentTextFrom(const QString& text);
+    void changedCurrentTextTo(const QString& text);
 signals:
-    void textChanged(const QString& text);
+    void valueCounted(const QString& text);
 };

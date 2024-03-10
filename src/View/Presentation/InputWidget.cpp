@@ -13,10 +13,11 @@ InputWidget::InputWidget(RequestController* controller, QWidget* parent)
     auto* insert_widget = new InsertExAmountWidget();
     insert_widget->setFixedSize(insert_widget->size().width(),50);
 
-    connect(insert_widget,&InsertExAmountWidget::updateNewText,this,&InputWidget::updateText);
-    connect(choose_widget,&ChooseExTypeWidget::changedExFrom,this,&InputWidget::setCurrentCodeFrom);
-    connect(choose_widget,&ChooseExTypeWidget::changedExTo,this,&InputWidget::setCurrentCodeTo);
-    // connect(this,&InputWidget::textChanged,insert_widget,&InsertExAmountWidget::updateNewText);
+    connect(insert_widget,&InsertExAmountWidget::changedCurrentText,this,&InputWidget::countNewValue);
+    connect(choose_widget,&ChooseExTypeWidget::changedCurrentTextFrom,this,&InputWidget::changedCurrentTextFrom);
+    connect(choose_widget,&ChooseExTypeWidget::changedCurrentTextTo,this,&InputWidget::changedCurrentTextTo);
+
+    connect(this,&InputWidget::valueCounted,insert_widget,&InsertExAmountWidget::getCountedText);
 
     auto* layout = new QVBoxLayout();
 
@@ -26,18 +27,19 @@ InputWidget::InputWidget(RequestController* controller, QWidget* parent)
     setLayout(layout);
 }
 
-void InputWidget::updateText(const QString& text)
+void InputWidget::countNewValue(const QString& text)
 {
-    std::cout << controller_->valueConvertion(current_code_to_, current_code_from_,text.toStdString()) << " -" << '\n';
+    float val = controller_->valueConvertion(current_code_to_, current_code_from_,text.toStdString());
+    emit(valueCounted(QString::number(val)));
 }
 
-void InputWidget::setCurrentCodeFrom(const QString& text)
+void InputWidget::changedCurrentTextFrom(const QString& text)
 {
     current_code_from_ = text.toStdString();
     std::cout << current_code_from_ << '\n';
 }
 
-void InputWidget::setCurrentCodeTo(const QString& text)
+void InputWidget::changedCurrentTextTo(const QString& text)
 {
     current_code_to_ = text.toStdString();
     std::cout << current_code_to_ << '\n';

@@ -47,7 +47,6 @@ set(HEADERS
         include/ExchangeData/ExchangeData.h
         include/ExchangeDataParser/ExchangeDataParser.h
         include/Presentation/Widget/ChooseExTypeWidget.h
-        cmake-build-debug/ExchangeRateApp_autogen/include/View/Widget/ui_exchangewidget.h
         include/ExchangeDataParser/ExchangeDataTranslator.h
         include/Presentation/Widget/ListWidget.h
         include/Controller/ExchangeCounter.h
@@ -58,7 +57,8 @@ set(HEADERS
         include/Presentation/Widget/OutputExAmountWidget.h
         include/TimerForUpdates.h
 )
-add_executable(ExchangeRateApp ${SOURCES} ${HEADERS})
+
+add_executable(ExchangeRateApp ${SOURCES} ${HEADERS} ${app_icon_resource_windows})
 target_link_libraries(ExchangeRateApp
         Qt::Core
         Qt::Gui

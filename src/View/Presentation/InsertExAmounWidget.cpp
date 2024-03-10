@@ -13,8 +13,8 @@ InsertExAmountWidget::InsertExAmountWidget(QWidget* parent)
     auto* text_editor_to = new OutputExAmountWidget();
     text_editor_to->setReadOnly(true);
 
-    connect(text_editor_from,&NumericExTextWidget::textChangedUpd,this,&InsertExAmountWidget::applyNewText);
-    connect(this,&InsertExAmountWidget::updateNewText,text_editor_to,&OutputExAmountWidget::updText);
+    connect(text_editor_from, &NumericExTextWidget::textChangedUpd, this, &InsertExAmountWidget::setText);
+    connect(this, &InsertExAmountWidget::sendCountedText, text_editor_to, &OutputExAmountWidget::setText);
 
     auto* layout = new QHBoxLayout();
     layout->addWidget(text_editor_from);
@@ -22,11 +22,12 @@ InsertExAmountWidget::InsertExAmountWidget(QWidget* parent)
     setLayout(layout);
 }
 
-void InsertExAmountWidget::applyNewText(const QString& text)
+void InsertExAmountWidget::setText(const QString& text)
 {
-    emit updateNewText(text);
+    emit changedCurrentText(text);
 }
 
-void InsertExAmountWidget::updText(const QString& text)
+void InsertExAmountWidget::getCountedText(const QString& text)
 {
+    emit sendCountedText(text);
 }

@@ -6,8 +6,3 @@ OutputExAmountWidget::OutputExAmountWidget(QWidget* parent)
 {
     setReadOnly(true);
 }
-
-void OutputExAmountWidget::updText(const QString& text)
-{
-    setText(text);
-}

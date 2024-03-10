@@ -5,7 +5,6 @@
 #include <QVBoxLayout>
 #include <QLineEdit>
 
-#include"../include/View/Widget/ui_exchangewidget.h"
 #include "../include/ExchangeDataParser/ExchangeDataTranslator.h"
 #include "Presentation/Widget/ListWidget.h"
 
@@ -15,21 +14,15 @@ int WWIDTH = 720;
 ChooseExTypeWidget::ChooseExTypeWidget(QWidget* parent)
     : QWidget(parent)
 {
-    list_ = new QList<QString>;
-    for (auto val : dictionary)
-    {
-        list_->append(QString{val.second.c_str()});
-    }
-
     auto* list_to = new ListWidget();
     auto* list_from = new ListWidget();
     list_to->addItem("");
     list_from->addItem("");
-    list_to->addItems(*list_);
-    list_from->addItems(*list_);
+    list_to->addItems(exchange_names);
+    list_from->addItems(exchange_names);
 
-    connect(list_from,&QComboBox::currentTextChanged,this,&ChooseExTypeWidget::getExFromData);
-    connect(list_to,&QComboBox::currentTextChanged,this,&ChooseExTypeWidget::getExToData);
+    connect(list_from,&QComboBox::currentTextChanged,this,&ChooseExTypeWidget::currentTextFromUpd);
+    connect(list_to,&QComboBox::currentTextChanged,this,&ChooseExTypeWidget::currentTextToUpd);
 
     auto* layout = new QHBoxLayout(this);
 
@@ -38,18 +31,12 @@ ChooseExTypeWidget::ChooseExTypeWidget(QWidget* parent)
 
     setLayout(layout);
 }
-
-ChooseExTypeWidget::~ChooseExTypeWidget()
+void ChooseExTypeWidget::currentTextToUpd(const QString& text)
 {
-    delete(list_);
+    emit changedCurrentTextTo(text);
 }
 
-void ChooseExTypeWidget::getExToData(const QString& text)
+void ChooseExTypeWidget::currentTextFromUpd(const QString& text)
 {
-    emit changedExTo(text);
-}
-
-void ChooseExTypeWidget::getExFromData(const QString& text)
-{
-    emit changedExFrom(text);
+    emit changedCurrentTextFrom(text);
 }

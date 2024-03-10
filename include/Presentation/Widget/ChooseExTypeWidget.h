@@ -13,19 +13,15 @@ class ChooseExTypeWidget : public QWidget
 {
     Q_OBJECT
 
-private:
-    QStringList* list_;
-
 public:
     explicit ChooseExTypeWidget(QWidget* parent = nullptr);
-    ~ChooseExTypeWidget() override;
 
 public slots:
-    void getExToData(const QString& text);
-    void getExFromData(const QString& text);
+    void currentTextToUpd(const QString& text);
+    void currentTextFromUpd(const QString& text);
 signals:
-    void changedExTo(const QString& text);
-    void changedExFrom(const QString& text);
+    void changedCurrentTextTo(const QString& text);
+    void changedCurrentTextFrom(const QString& text);
 };
 
 

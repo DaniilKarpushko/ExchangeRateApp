@@ -10,9 +10,10 @@ public:
     explicit InsertExAmountWidget(QWidget* parent = nullptr);
 
 public slots:
-    void applyNewText(const QString& text);
-    void updText(const QString& text);
+    void setText(const QString& text);
+    void getCountedText(const QString& text);
 
 signals:
-    void updateNewText(const QString& text);
+    void changedCurrentText(const QString& text);
+    void sendCountedText(const QString& text);
 };
