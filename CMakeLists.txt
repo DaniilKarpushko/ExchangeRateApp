@@ -41,6 +41,7 @@ set(SOURCES src/main.cpp
         src/View/Presentation/InputWidget.cpp
         src/View/Presentation/NumericExTextWidget.cpp
         src/View/Presentation/OutputExAmountWIdget.cpp
+        src/TimerForUpdates.cpp
 )
 set(HEADERS
         include/Controller/RequestController.h

@@ -5,11 +5,13 @@
 
 ExchangeData RequestController::getExchangeData()
 {
+    std::lock_guard<std::mutex> lock(mutex_);
     return current_data_;
 }
 
 float RequestController::valueConvertion(const std::string& val_to, const std::string& val_from, const std::string& amount)
 {
+    std::lock_guard<std::mutex> lock(mutex_);
     try
     {
         float amount_f = std::stof(amount);
@@ -23,6 +25,7 @@ float RequestController::valueConvertion(const std::string& val_to, const std::s
 
 void RequestController::updateExchangeDate()
 {
+    std::lock_guard<std::mutex> lock(mutex_);
     cpr::Url request = "https://openexchangerates.org/api/latest.json?app_id=" + api_id_;
     const cpr::Response response = cpr::GetAsync(request).get();
     current_data_ = ExchangeData("", std::map<std::string, float>(), response.status_code);

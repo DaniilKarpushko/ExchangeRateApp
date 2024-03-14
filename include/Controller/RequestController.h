@@ -1,4 +1,5 @@
 #pragma once
+#include <mutex>
 #include <string>
 
 #include "ExchangeCounter.h"
@@ -12,6 +13,8 @@ class RequestController
 
     ExchangeData current_data_;
     ExchangeDataParser exchange_data_parser_;
+
+    std::mutex mutex_;
 
 public:
     RequestController(const std::string& api_id, const ExchangeDataParser ep)
