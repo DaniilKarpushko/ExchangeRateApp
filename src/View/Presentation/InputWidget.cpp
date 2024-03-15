@@ -36,11 +36,9 @@ void InputWidget::countNewValue(const QString& text)
 void InputWidget::changedCurrentTextFrom(const QString& text)
 {
     current_code_from_ = text.toStdString();
-    std::cout << current_code_from_ << '\n';
 }
 
 void InputWidget::changedCurrentTextTo(const QString& text)
 {
     current_code_to_ = text.toStdString();
-    std::cout << current_code_to_ << '\n';
 }

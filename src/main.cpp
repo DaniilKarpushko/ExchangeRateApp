@@ -14,29 +14,18 @@ void func()
 
 int main(int argc, char* argv[])
 {
-    auto* rq = new RequestController("5dbe82f3af424cd8b79eecf4aadbf69d",ExchangeDataParser{});
-    TimerForUpdates tm{std::chrono::seconds{10},rq};
-    std::thread tr(&TimerForUpdates::Start,&tm);
-    // std::this_thread::sleep_for(std::chrono::seconds{15});
-    auto data = rq->getExchangeData();
-    while(data.status_code != 200)
-    {
-        data = rq->getExchangeData();
-    }
-    std::cout << "write data" << '\n';
-    for(auto el : data.exchange)
-       {
-            std::cout << el.first << '\n';
-       }
-         std::cout << "end writing" << '\n';
-    tr.join();
-    // QApplication app(argc, argv);
-    //
-    // rq->updateExchangeDate();
-    // auto* widget = new InputWidget(rq);
-    //
-    // widget->setWindowTitle("ExchangeApp");
-    // widget->setWindowIcon(QIcon{"images/icon.jpg"});
-    // widget->show();
-    // return app.exec();
+    QApplication app(argc, argv);
+
+    auto* request_controller = new RequestController("5dbe82f3af424cd8b79eecf4aadbf69d",ExchangeDataParser{});
+    auto* timer = new TimerForUpdates(std::chrono::hours{1},request_controller);
+
+    std::thread timer_thread(&TimerForUpdates::Start,timer);
+    timer_thread.detach();
+
+    auto* widget = new InputWidget(request_controller);
+
+    widget->setWindowTitle("ExchangeApp");
+    widget->setWindowIcon(QIcon{"images/icon.jpg"});
+    widget->show();
+    return app.exec();
 }
