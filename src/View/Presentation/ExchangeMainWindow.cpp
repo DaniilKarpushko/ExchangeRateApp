@@ -22,7 +22,7 @@ ExchangeMainWindow::ExchangeMainWindow(ApiController* request_controller, QWidge
 
     this->setMenuWidget(switch_button_);
     this->setCentralWidget(input_widget_);
-    this->centralWidget()->setFixedSize(720, 100);
+    this->centralWidget()->setFixedHeight(100);
 
     connect(switch_button_, &QPushButton::clicked, this, &ExchangeMainWindow::changeWidget);
     connect(request_controller_,&ApiController::monthlyCurrencyExchangeReady,this,&ExchangeMainWindow::monthlyExchangeUpdated);
@@ -47,7 +47,7 @@ void ExchangeMainWindow::changeWidget()
     {
         input_widget_ = new InputWidget(request_controller_);
         setCentralWidget(input_widget_);
-        centralWidget()->setFixedSize(720, 100);
+        centralWidget()->setFixedHeight(100);
         switch_button_->setText("---Build monthly graphic---");
     }
 }
