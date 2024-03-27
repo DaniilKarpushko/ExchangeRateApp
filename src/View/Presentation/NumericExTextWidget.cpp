@@ -1,12 +1,13 @@
-#include "../include/Presentation/Widget/NumericExTextWidget.h"
 #include <QKeyEvent>
 #include <qlayout.h>
 
+#include "../include/Presentation/Widget/NumericExTextWidget.h"
+
 NumericExTextWidget::NumericExTextWidget(QWidget* parent)
-    :QTextEdit(parent)
+    : QTextEdit(parent)
 {
     setPlainText("Введите количество");
-    connect(this,&QTextEdit::textChanged,this,&NumericExTextWidget::textChanged);
+    connect(this, &QTextEdit::textChanged, this, &NumericExTextWidget::textChanged);
 }
 
 void NumericExTextWidget::focusInEvent(QFocusEvent* event)
@@ -17,7 +18,7 @@ void NumericExTextWidget::focusInEvent(QFocusEvent* event)
 
 void NumericExTextWidget::keyPressEvent(QKeyEvent* event)
 {
-    if(event->key() >= Qt::Key_0 && event->key() <= Qt::Key_9
+    if (event->key() >= Qt::Key_0 && event->key() <= Qt::Key_9
         || event->key() == Qt::Key_Period
         || event->key() == Qt::Key_Backspace)
     {

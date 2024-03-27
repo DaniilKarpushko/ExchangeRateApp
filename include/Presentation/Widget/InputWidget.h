@@ -2,20 +2,23 @@
 
 #include <QWidget>
 
-#include "Controller/RequestController.h"
+#include "Controller/ApiController.h"
 
 class InputWidget : public QWidget
 {
     Q_OBJECT
 
-    RequestController* controller_;
+    ApiController* controller_;
     std::string current_code_from_;
     std::string current_code_to_;
 
 public:
-    explicit InputWidget(RequestController* controller, QWidget* parent = nullptr);
+    explicit InputWidget(ApiController* controller, QWidget* parent = nullptr);
+    std::string getCurrencyFrom() { return current_code_from_; };
+    std::string getCurrencyTo() { return current_code_to_; };
 
 public slots:
+    void currencyCounted(float val);
     void countNewValue(const QString& text);
     void changedCurrentTextFrom(const QString& text);
     void changedCurrentTextTo(const QString& text);

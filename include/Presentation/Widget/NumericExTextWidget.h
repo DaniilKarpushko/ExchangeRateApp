@@ -15,6 +15,7 @@ protected:
     void focusInEvent(QFocusEvent* event) override;
 
     void keyPressEvent(QKeyEvent* event) override;
+
 private slots:
     void textChanged();
 };

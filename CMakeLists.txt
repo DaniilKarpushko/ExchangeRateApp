@@ -31,39 +31,44 @@ find_package(Qt6 COMPONENTS
         Core
         Gui
         Widgets
+        Charts
         REQUIRED)
 include_directories(include)
 set(SOURCES src/main.cpp
-        src/ExchangeDataParser/ExchangeDataParser.cpp
-        src/Controller/RequestController.cpp
+        src/Controller/ApiController.cpp
         src/View/Presentation/ChooseExTypeWidget.cpp
         src/View/Presentation/InsertExAmounWidget.cpp
         src/View/Presentation/InputWidget.cpp
         src/View/Presentation/NumericExTextWidget.cpp
         src/View/Presentation/OutputExAmountWIdget.cpp
-        src/TimerForUpdates.cpp
+        src/View/Presentation/ExchangeMainWindow.cpp
+        src/View/Presentation/GraphicBuilderWidget.cpp
+        src/Controller/CurrentExchangeService.cpp
+        src/Controller/RequestService.cpp
 )
 set(HEADERS
-        include/Controller/RequestController.h
+        include/Controller/ApiController.h
         include/ExchangeData/ExchangeData.h
-        include/ExchangeDataParser/ExchangeDataParser.h
         include/Presentation/Widget/ChooseExTypeWidget.h
         include/ExchangeDataParser/ExchangeDataTranslator.h
         include/Presentation/Widget/ListWidget.h
-        include/Controller/ExchangeCounter.h
         include/Presentation/Widget/ExchangeMainWindow.h
         include/Presentation/Widget/InsertExAmountWidget.h
         include/Presentation/Widget/InputWidget.h
         include/Presentation/Widget/NumericExTextWidget.h
         include/Presentation/Widget/OutputExAmountWidget.h
-        include/TimerForUpdates.h
+        include/Presentation/Widget/GraphicBuilderWidget.h
+        include/Controller/CurrentExchangeService.h
+        include/Controller/RequestService.h
+        include/ExchangeData/MonthlyExchangeData.h
 )
-
+set(app_icon_resource_windows "${CMAKE_CURRENT_SOURCE_DIR}/resources/app.rc")
 add_executable(ExchangeRateApp ${SOURCES} ${HEADERS} ${app_icon_resource_windows})
 target_link_libraries(ExchangeRateApp
         Qt::Core
         Qt::Gui
         Qt::Widgets
+        Qt::Charts
         cpr
         nlohmann_json::nlohmann_json
 )

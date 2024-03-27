@@ -1,13 +1,6 @@
-//
-// Created by antikill on 26.02.2024.
-//
 #pragma once
 
-#ifndef EXCHANGEWIDGET_H
-#define EXCHANGEWIDGET_H
-
 #include <QTextEdit>
-#include "Controller/RequestController.h"
 
 class ChooseExTypeWidget : public QWidget
 {
@@ -23,6 +16,3 @@ signals:
     void changedCurrentTextTo(const QString& text);
     void changedCurrentTextFrom(const QString& text);
 };
-
-
-#endif //EXCHANGEWIDGET_H
